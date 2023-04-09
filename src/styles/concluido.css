@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    background: #9abdf1;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.botaolink {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #8982e7;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.botaolink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.login-container {
+    text-align: center;
+}
+
+.login-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #b6b3e4;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        margin: 40px;
+    }
+
+    img {
+        margin: 40px auto;
+        max-width: 80%;
+    }
+
+    .botaolink {
+        margin: 40px auto;
+    }
+
+    .login-btn {
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    h1 {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    img {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .botaolink {
+        margin: 20px auto;
+    }
+
+    .login-btn {
+        margin: 10px;
+    }
+}

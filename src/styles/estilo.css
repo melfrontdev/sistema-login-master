@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.loginpai {
+    width: 100vw;
+    height: 100vh;
+    background: #9abdf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginfilho {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginfilho h1 {
+    color: #000000;
+    font-size: 2.5vw;
+}
+
+.loginfilhoimage {
+    width: 35vw;
+}
+
+.login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.areacartao {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 159px 47px;
+;
+    background: #3b94c96b;
+    border-radius: 65px;
+    box-shadow: 0px 10px 40px #021c4256;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    z-index: 1;
+}
+
+.areacartao::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    filter: blur(5px);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.areacartao:hover {
+    transform: scale(1.05);
+}
+
+.areacartao:hover::before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    border-color: #FFFFFF;
+}
+
+
+
+
+.texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.texto input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.texto label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.texto input::placeholder {
+    color: #f0ffff94;
+}
+
+.botao {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #2ee078, #34ca2f);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #615fdb52;
+    transition: background 0.3s ease-in-out;
+}
+
+.botao:hover {
+    background: linear-gradient(to bottom, #170f7c, #16106d);
+}
+
+.botao a {
+    left: 50px;
+}
+
+.botaolink {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #5348e7, #362bd1);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #615fdb52;
+    transition: background 0.3s ease-in-out;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4285F4;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.botaolink:hover {
+    background: linear-gradient(to bottom, #170f7c, #16106d);
+}
+
+.botaolink a {
+    left: 50px;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .areacartao {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .loginpai {
+        flex-direction: column;
+    }
+
+    .loginfilho h1 {
+        display: none;
+    }
+
+    .loginfilho {
+        width: 100%;
+        height: auto;
+    }
+
+    .login {
+        width: 100%;
+        height: auto;
+    }
+
+    .loginfilhoimage {
+        width: 40vh;
+    }
+
+    .areacartao {
+        width: 90%;
+    }
+}
